@@ -8,6 +8,10 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "start": "cross-env NODE_ENV=development webpack serve --mode development"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
   "author": "Domanovich",
   "license": "ISC",
   "devDependencies": {
