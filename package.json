@@ -8,10 +8,9 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "start": "cross-env NODE_ENV=development webpack serve --mode development"
   },
-		  "browserslist": [
+  "browserslist": [
     "defaults",
-    "not IE 11",
-    "maintained node versions"
+    "not IE 11"
   ],
   "author": "Domanovich",
   "license": "ISC",
@@ -42,6 +41,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "normalize.css": "^8.0.1"
   }
 }
