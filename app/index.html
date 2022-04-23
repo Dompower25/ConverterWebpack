@@ -1,0 +1,188 @@
+<head><script defer="defer" src="./js/main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ../node_modules/babel-loader/lib/index.js):
+  Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@babel/plugin-transform-runtime' imported from F:\Projects\ConvertWebpack\babel-virtual-resolve-base.js
+      at new NodeError (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:2552:5)
+      at packageResolve (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3208:9)
+      at moduleResolve (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3242:18)
+      at defaultResolve (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3281:13)
+      at F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3304:14
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:63:103)
+      at _next (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:65:194)
+      at F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:65:364
+      at new Promise (<anonymous>)
+  ModuleBuildError: Module build failed (from ../node_modules/babel-loader/lib/index.js):
+  Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@babel/plugin-transform-runtime' imported from F:\Projects\ConvertWebpack\babel-virtual-resolve-base.js
+      at new NodeError (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:2552:5)
+      at packageResolve (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3208:9)
+      at moduleResolve (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3242:18)
+      at defaultResolve (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3281:13)
+      at F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:3304:14
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:63:103)
+      at _next (F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:65:194)
+      at F:\Projects\ConvertWebpack\node_modules\@babel\core\lib\vendor\import-meta-resolve.js:65:364
+      at new Promise (<anonymous>)
+      at processResult (F:\Projects\ConvertWebpack\node_modules\webpack\lib\NormalModule.js:753:19)
+      at F:\Projects\ConvertWebpack\node_modules\webpack\lib\NormalModule.js:855:5
+      at F:\Projects\ConvertWebpack\node_modules\loader-runner\lib\LoaderRunner.js:399:11
+      at F:\Projects\ConvertWebpack\node_modules\loader-runner\lib\LoaderRunner.js:251:18
+      at context.callback (F:\Projects\ConvertWebpack\node_modules\loader-runner\lib\LoaderRunner.js:124:13)
+      at F:\Projects\ConvertWebpack\node_modules\babel-loader\lib\index.js:59:103
+  Cannot read properties of undefined (reading 'get')
+  during rendering of asset asset/resource|F:\Projects\ConvertWebpack\node_modules\babel-loader\lib\index.js!F:\Projects\ConvertWebpack\src\js\main.js
+  ChunkRenderError: Cannot read properties of undefined (reading 'get')
+  during rendering of asset asset/resource|F:\Projects\ConvertWebpack\node_modules\babel-loader\lib\index.js!F:\Projects\ConvertWebpack\src\js\main.js
+      at F:\Projects\ConvertWebpack\node_modules\webpack\lib\Compilation.js:4516:23
+      at symbolIterator (F:\Projects\ConvertWebpack\node_modules\neo-async\async.js:3482:9)
+      at timesSync (F:\Projects\ConvertWebpack\node_modules\neo-async\async.js:2297:7)
+      at Object.eachLimit (F:\Projects\ConvertWebpack\node_modules\neo-async\async.js:3463:5)
+      at Compilation.createChunkAssets (F:\Projects\ConvertWebpack\node_modules\webpack\lib\Compilation.js:4496:12)
+      at F:\Projects\ConvertWebpack\node_modules\webpack\lib\Compilation.js:3097:14
+      at F:\Projects\ConvertWebpack\node_modules\webpack\lib\Compilation.js:3274:6
+      at F:\Projects\ConvertWebpack\node_modules\neo-async\async.js:2818:7
+      at done (F:\Projects\ConvertWebpack\node_modules\neo-async\async.js:3522:9)
+      at F:\Projects\ConvertWebpack\node_modules\webpack\lib\Compilation.js:3237:8
+  
+  - import-meta-resolve.js:2552 new NodeError
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:2552:5
+  
+  - import-meta-resolve.js:3208 packageResolve
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3208:9
+  
+  - import-meta-resolve.js:3242 moduleResolve
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3242:18
+  
+  - import-meta-resolve.js:3281 defaultResolve
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3281:13
+  
+  - import-meta-resolve.js:3304 
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3304:14
+  
+  - Generator.next
+  
+  - import-meta-resolve.js:63 asyncGeneratorStep
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:63:103
+  
+  - import-meta-resolve.js:65 _next
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:65:194
+  
+  - import-meta-resolve.js:65 
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:65:364
+  
+  - new Promise
+  
+  - ModuleBuildError: Module build failed (from ../node_modules/babel-loader/lib/index.js):
+  
+  - Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@babel/plugin-transform-runtime' imported from F:\Projects\ConvertWebpack\babel-virtual-resolve-base.js
+  
+  - import-meta-resolve.js:2552 new NodeError
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:2552:5
+  
+  - import-meta-resolve.js:3208 packageResolve
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3208:9
+  
+  - import-meta-resolve.js:3242 moduleResolve
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3242:18
+  
+  - import-meta-resolve.js:3281 defaultResolve
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3281:13
+  
+  - import-meta-resolve.js:3304 
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:3304:14
+  
+  - Generator.next
+  
+  - import-meta-resolve.js:63 asyncGeneratorStep
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:63:103
+  
+  - import-meta-resolve.js:65 _next
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:65:194
+  
+  - import-meta-resolve.js:65 
+    [ConvertWebpack]/[@babel]/core/lib/vendor/import-meta-resolve.js:65:364
+  
+  - new Promise
+  
+  - NormalModule.js:753 processResult
+    [ConvertWebpack]/[webpack]/lib/NormalModule.js:753:19
+  
+  - NormalModule.js:855 
+    [ConvertWebpack]/[webpack]/lib/NormalModule.js:855:5
+  
+  - LoaderRunner.js:399 
+    [ConvertWebpack]/[loader-runner]/lib/LoaderRunner.js:399:11
+  
+  - LoaderRunner.js:251 
+    [ConvertWebpack]/[loader-runner]/lib/LoaderRunner.js:251:18
+  
+  - LoaderRunner.js:124 context.callback
+    [ConvertWebpack]/[loader-runner]/lib/LoaderRunner.js:124:13
+  
+  - index.js:59 
+    [ConvertWebpack]/[babel-loader]/lib/index.js:59:103
+  
+  - Cannot read properties of undefined (reading 'get')
+  
+  - during rendering of asset asset/resource|F:\Projects\ConvertWebpack\node_modules\babel-loader\lib\index.js!F:\Projects\ConvertWebpack\src\js\main.js
+  
+  - ChunkRenderError: Cannot read properties of undefined (reading 'get')
+  
+  - during rendering of asset asset/resource|F:\Projects\ConvertWebpack\node_modules\babel-loader\lib\index.js!F:\Projects\ConvertWebpack\src\js\main.js
+  
+  - Compilation.js:4516 
+    [ConvertWebpack]/[webpack]/lib/Compilation.js:4516:23
+  
+  - async.js:3482 symbolIterator
+    [ConvertWebpack]/[neo-async]/async.js:3482:9
+  
+  - async.js:2297 timesSync
+    [ConvertWebpack]/[neo-async]/async.js:2297:7
+  
+  - async.js:3463 Object.eachLimit
+    [ConvertWebpack]/[neo-async]/async.js:3463:5
+  
+  - Compilation.js:4496 Compilation.createChunkAssets
+    [ConvertWebpack]/[webpack]/lib/Compilation.js:4496:12
+  
+  - Compilation.js:3097 
+    [ConvertWebpack]/[webpack]/lib/Compilation.js:3097:14
+  
+  - Compilation.js:3274 
+    [ConvertWebpack]/[webpack]/lib/Compilation.js:3274:6
+  
+  - async.js:2818 
+    [ConvertWebpack]/[neo-async]/async.js:2818:7
+  
+  - async.js:3522 done
+    [ConvertWebpack]/[neo-async]/async.js:3522:9
+  
+  - Compilation.js:3237 
+    [ConvertWebpack]/[webpack]/lib/Compilation.js:3237:8
+  
+  - child-compiler.js:169 
+    [ConvertWebpack]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:564 
+    [ConvertWebpack]/[webpack]/lib/Compiler.js:564:11
+  
+  - Compiler.js:1183 
+    [ConvertWebpack]/[webpack]/lib/Compiler.js:1183:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [ConvertWebpack]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1179 
+    [ConvertWebpack]/[webpack]/lib/Compiler.js:1179:33
+  
+  - Compilation.js:2784 finalCallback
+    [ConvertWebpack]/[webpack]/lib/Compilation.js:2784:11
+  
+  - Compilation.js:3089 
+    [ConvertWebpack]/[webpack]/lib/Compilation.js:3089:11
+  
+  
+</anonymous></anonymous></anonymous></anonymous></pre>
