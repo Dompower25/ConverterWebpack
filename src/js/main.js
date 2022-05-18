@@ -21,7 +21,8 @@ async function getRatesFromApi() {
   try {
     const url = "https://www.nbrb.by/api/exrates/rates?periodicity=0";
     // Следующая строка проверяет что запрос не длится дольше 3х секунд
-    const response = await Promise.race([fetch(url), timeOutError( {sec: 3} )]);
+    const response = await Promise.race([fetch(url), timeOutError({ sec: 3 })]);
+    document.querySelector("#message").style.display = ["none"].join("\n");
     return await response.json();
   } catch (e) {
     console.warn("Error when fetching rates from api. Reason:", e);

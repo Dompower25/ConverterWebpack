@@ -82,7 +82,7 @@ module.exports = {
     open: true,
     hot: true,
     compress: true,
-    port: 3000,
+    port: 2500,
   },
   plugins: plugins(),
   devtool: isProd ? false : "source-map",
