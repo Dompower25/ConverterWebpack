@@ -93,18 +93,16 @@ body {
   );
   background-attachment: fixed;
 }
-
-/*----------------------------------------------*/
 h1 {
   font-size: 55px;
   font-weight: 200;
-  margin: 20px 0px 20px -50px;
-  text-align: center;
+  margin: 20px 0px 20px 30px;
 }
 a {
   color: #000;
-  margin: 20px 0px 20px 30px;
+  margin: 15px 0;
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -115,7 +113,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .row {
   display: flex;
-  justify-content: center;
 }
 .row__column {
   display: flex;
@@ -128,7 +125,6 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 300;
   border-radius: 10px;
   padding: 0px 70px 5px 10px;
-  margin: 15px 16px;
   color: rgba(8, 24, 12, 0.863);
   background-image: radial-gradient(
     circle 592px at 48.2% 50%,
@@ -139,16 +135,15 @@ input[type="number"]::-webkit-outer-spin-button {
 .form-control:hover {
   border: 2px solid rgb(66, 164, 177);
 }
-
 .container__convertor-box {
   margin: 0 auto;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.currency {
-  position: relative;
-  top: 30px;
-  right: 100px;
-  height: 25px;
+.convertor__box {
+  margin: 15px 0;
 }
 .country-flag {
   background-image: url(../img/flags.png);
@@ -159,6 +154,10 @@ input[type="number"]::-webkit-outer-spin-button {
 .val-name {
   font-size: 20px;
   color: rgb(129, 129, 129);
+  width: 0;
+  position: relative;
+  right: 55px;
+  top: 15px;
 }
 .add-convertor__box {
   width: 160px;
@@ -169,13 +168,10 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-left: 30px;
   text-transform: uppercase;
   font-weight: 200;
-
 }
-
 #message:empty {
   opacity: 0;
 }
-
 #message {
   color: white;
   padding: 1rem;

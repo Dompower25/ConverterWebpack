@@ -10,7 +10,8 @@
   },
   "browserslist": [
     "defaults",
-    "not IE 11"
+    "not IE 11",
+    "maintained node versions"
   ],
   "author": "Domanovich",
   "license": "ISC",
@@ -41,7 +42,6 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.17.0",
     "normalize.css": "^8.0.1"
   }
 }

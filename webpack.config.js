@@ -69,6 +69,7 @@ module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: "development",
   entry: "./js/main.js",
+  target: ["web", "es5"],
   output: {
     filename: `./js/${filename("js")}`,
     path: path.resolve(__dirname, "app"),
@@ -82,7 +83,7 @@ module.exports = {
     open: true,
     hot: true,
     compress: true,
-    port: 2500,
+    port: 3000,
   },
   plugins: plugins(),
   devtool: isProd ? false : "source-map",

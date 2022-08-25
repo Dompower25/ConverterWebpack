@@ -1,5 +1,5 @@
-import '../scss/main.scss';
-import '../index.html';
+import "../scss/main.scss";
+import "../index.html";
 
 /*
  * https://www.nbrb.by/apihelp/exrates
@@ -22,7 +22,9 @@ async function getRatesFromApi() {
     const url = "https://www.nbrb.by/api/exrates/rates?periodicity=0";
     // Следующая строка проверяет что запрос не длится дольше 3х секунд
     const response = await Promise.race([fetch(url), timeOutError({ sec: 3 })]);
-    document.querySelector("#message").style.display = ["none"].join("\n");
+    if (!Array.isArray(response)) {
+      throw Error("Bad response");
+    }
     return await response.json();
   } catch (e) {
     console.warn("Error when fetching rates from api. Reason:", e);
@@ -90,12 +92,6 @@ const elements = {
         className: "form-control",
         value: 0,
       });
-      const divCurrency = createElement("div", {
-        className: "currency row",
-      });
-      const createSpanCountryFlag = createElement("span", {
-        className: "country-flag flag-usd",
-      });
       const createSpanValName = createElement("span", {
         className: "val-name",
         innerText: item.Cur_Abbreviation,
@@ -103,9 +99,7 @@ const elements = {
 
       elements.containerToAdd.appendChild(divConvertorBox);
       divConvertorBox.appendChild(input);
-      divConvertorBox.appendChild(divCurrency);
-      divCurrency.appendChild(createSpanCountryFlag);
-      divCurrency.appendChild(createSpanValName);
+      divConvertorBox.appendChild(createSpanValName);
       return input;
     });
 
