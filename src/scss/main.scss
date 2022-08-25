@@ -96,11 +96,11 @@ body {
 h1 {
   font-size: 55px;
   font-weight: 200;
-  margin: 20px 0px 20px 30px;
+  margin: 20px 0;
 }
 a {
   color: #000;
-  margin: 15px 0;
+  margin: 8px 0 3px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -174,7 +174,45 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 #message {
   color: white;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 5px;
   background-color: red;
+}
+
+@media (max-width: 730px) {
+  .container__convertor-box {
+    max-width: 570px;
+    margin: 0 auto;
+  }
+  .void__box {
+    max-width: 570px;
+    margin: 0 auto;
+  } 
+}
+
+@media (max-width: 570px) {
+    .container__convertor-box {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .void__box {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 370px) {
+    .container__convertor-box {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .void__box {
+    max-width: 300px;
+    margin: 0 auto;
+    &input {
+      max-width: 300px;
+          margin: 0 auto;
+    }
+  }
+
 }
