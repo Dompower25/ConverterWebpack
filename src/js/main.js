@@ -19,7 +19,7 @@ function timeOutError({ sec }) {
 }
 async function getRatesFromApi() {
   try {
-    const url = "https://www.nbrb.by/api/exr2ates/rates?periodicity=0";
+    const url = "https://www.nbrb.by/api/exrates/rates?periodicity=0";
     // Следующая строка проверяет что запрос не длится дольше 3х секунд
     const response = await Promise.race([fetch(url), timeOutError({ sec: 3 })]);
     return await response.json();
